@@ -1,6 +1,6 @@
 # 🧑‍🍳 Recipe Matcher (Plantjammer-Inspired)
 
-An expirement in vibe coding, in order to bring back a beloved app that no longer exists.
+An expirement in vibe coding, in an attempt to bring back a beloved app that no longer exists.
 
 ---
 
