@@ -3,7 +3,8 @@ from sentence_transformers import SentenceTransformer, util
 import torch
 
 # Load the recipe dataset (update filename if needed)
-df = pd.read_csv("full_dataset.csv")  # <--- Replace with your actual filename
+df = pd.read_csv("deduplicated_dataset.csv")
+embeddings = torch.load("ingredient_embeddings.pt", map_location=torch.device("cpu"))
 
 # Turn the ingredient list into readable text
 df['flat_ingredients'] = df['NER'].apply(lambda x: ', '.join(eval(x)))
